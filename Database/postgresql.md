@@ -21,10 +21,6 @@ sudo apt-key add -
 sudo apt-get update
 apt-get install postgresql-9.6
 ```
- 
-## 配置
-   [参考](https://www.cnblogs.com/z-sm/archive/2016/07/05/5644165.html)
-    
 ### 修改数据库默认管理员账号的密码
     sudo -u postgres psql
     postgres=# alter user postgres with password '123456';
@@ -49,7 +45,6 @@ sudo gedit /etc/postgresql/9.6/main/pg_hba.conf
 ```
 sudo /etc/init.d/postgresql restart
 ```
-
 ### 添加新用户和新数据库
 
 运行系统用户"postgres"的psql命令，进入客户端：
